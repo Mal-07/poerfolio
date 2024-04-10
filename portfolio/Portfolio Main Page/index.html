@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf=8">
+    <link rel="stylesheet" href="styles.css">
+    <title> Official Portfolio</title>
+</head>
+
+<body id="body">
+    <main class="container">
+        <nav id="navbar">
+            <li><a href="#projects">Projects</a> </li>
+            <li><a href="#rates">Rates</a></li>
+            <li><a href="#feedback-form">Feedback</a> </li>
+            <li><a href="www.linkedin.com<user>">LinkedIn</a></li>
+            <li><a href="mailto:emilyb81307@gmail.com">Email me</a></li>
+        </nav>
+
+        <div id="profile">
+            <div id="img-wrapper"><img src="C:\Users\emily\OneDrive\Pictures\Bluetooth\20231012_100322-02.jpeg"
+                    alt="Image of Emily" id="profile-picture">
+                <h1 id="profile-heading">Emily Boley</h1>
+                <h3 id="profile-subheading">Jr. Freelance Web Developer/ Designer</h3>
+                <h5 id="profile-quote">{{No Rain. No Flowers}}</h5>
+                <hr>
+                <h2 id="projects">Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-image-wrapper">
+                    <h4>Online Newspaper</h4> <a href="C:\Users\emily\OneDrive\Desktop\portfolio\Online Newspaper\index.html" target="_blank"><img class="project-tile" target="_blank"
+                          src="C:\Users\emily\OneDrive\Pictures\Saved Pictures\249.jpg" alt=""></a>
+                </div>
+
+                <div class="project-image-wrapper">
+                    <h4>Cafe Menu</h4> <a target="_blank" href="C:\Users\emily\OneDrive\Desktop\portfolio\Cafe Menu\index.html"><img class="project-tile" target="_blank"
+                            src="C:\Users\emily\OneDrive\Pictures\Saved Pictures\photo249.jpg" alt=""></a>
+                </div>
+
+                <div class="project-image-wrapper">
+                    <h4>Photography Blog</h4> <a target="_blank" href="C:\Users\emily\OneDrive\Desktop\portfolio\photography blog\home\index.html"><img class="project-tile" target="_blank"
+                            src="C:\Users\emily\OneDrive\Pictures\photography\Vintage Road to Nowhere Wallpaper-tile.jpg" alt=""></a>
+                </div>
+
+                <div class="project-image-wrapper">
+                    <h4> Web Dev for Beginners</h4> <a target="_blank" href="C:\Users\emily\OneDrive\Desktop\portfolio\Web Development for beginners\index.html"><img class="project-tile" target="_blank"
+                            src="C:\Users\emily\Downloads\Yellow Tuplips.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <hr>
+        <h2 id="rates"> Rates</h2>
+        <div class="rate-card-grid">
+            <div class="rate-cards-wrapper">
+                <div id="rate-card">
+                    <h3>Single Web Page</h3>
+                    <h5>$500</h5>
+                    <ul>
+                        <li>Custom Design</li>
+                        <li>2 week results</li>
+                        <li>Contract Provided</li>
+                    </ul>
+                    <a href="#contact" id="button">Inquire Here</a>
+                </div>
+            </div>
+            <div class="rate-cards-wrapper">
+                <div id="rate-card">
+                    <h3>2 Page Website</h3>
+                    <h5>$1,000</h5>
+                    <ul>
+                        <li>Custom Design</li>
+                        <li>3 week results</li>
+                        <li>Contract Provided</li>
+                    </ul>
+                    <a href="#contact" id="button">Inquire Here</a>
+                </div>
+            </div>
+            <div class="rate-cards-wrapper">
+                <div class="rate-cards">
+                    <div id="rate-card">
+                        <h3>3-4 Page Website</h3>
+                        <h5>$1,500</h5>
+                        <ul>
+                            <li>Custom Design</li>
+                            <li>4-6 week results</li>
+                            <li>Contract Provided</li>
+                        </ul>
+                        <a href="#contact" id="button">Inquire Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="rate-cards-wrapper">
+                <div class="rate-cards">
+                    <div id="rate-card">
+                        <h3>Additional Pages</h3>
+                        <h5>$250 per page</h5>
+                        <ul>
+                            <li>Custom Design</li>
+                            <li>4-6 week results</li>
+                            <li>Contract Provided</li>
+                        </ul>
+                        <a href="#contact" id="button">Inquire Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<footer>
+    <div>
+        <hr>
+        <fieldset id="feedback-form">
+            <legend id="feedback-heading">Feedback</legend>
+            <form>
+                <div>
+                    <legend>Name</legend> <input type="name" placeholder="John Doe"></input>
+                    <legend>Email</legend> <input type="email" placeholder="johndoe123@gmail.com"> </input>
+                    <legend>Message</legend> <input type="textarea" placeholder="Please share your experience"></input>
+                </div>
+                <div id="submit-button-wrapper"><input type="submit" class="submit-button"></input></div>
+
+            </form>
+
+        </fieldset>
+    </div><hr>
+    <div id="feedback-display">
+
+    </div>
+    <p id="notice">These are designs I have created and any relation to any real websites are completely unintentional.<br> Thank you.</p>
+</footer>
+<script>
+    // Assuming you have a form with id 'feedback-form' and a div with id 'feedback-display' to show the feedback
+document.getElementById('feedback-form').onsubmit = function(event) {
+  event.preventDefault(); // Prevent the default form submit action
+
+  // Fetch form data
+  var formData = new FormData(this);
+
+  // Send the form data to the server using fetch API
+  fetch('your-server-endpoint', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json()) // Assuming the server responds with JSON
+  .then(data => {
+    // Display the feedback on the website
+    document.getElementById('feedback-display').innerText = 'Feedback submitted: ' + data.feedback;
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+};</script>
+
+
+</html>

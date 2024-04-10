@@ -1,0 +1,98 @@
+body {
+    background-image: url('file:///C:/Users/emily/OneDrive/Pictures/Saved%20Pictures/photo58.jpg');
+    text-align: center;
+    color:white
+
+}
+
+
+.name {
+    font-size: 40px;
+    
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    color: rgb(85, 17, 17);
+    text-decoration: overline underline;
+    text-decoration-color: rgb(85, 17, 17);
+    
+}
+
+#est {
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+h2 {
+    font-size: 30px;
+    text-decoration: underline;
+    padding-top: 20px;
+}
+
+#coffees {
+    background-color: black;
+    color: brown;
+    max-width: 500px;
+    margin: auto;
+    font-size: 18px;
+    border-bottom-color: black;
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+
+}
+#coffees p:hover{
+    text-decoration: underline;
+}
+
+#flavor {
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: -40px;
+
+
+
+
+}
+
+
+#price {
+    text-align: right;
+    margin-right: 100px;
+    margin-bottom: 5px;
+
+}
+
+.desserts {
+    background-color: #5c1810;
+    color: black;
+    max-width: 500px;
+    margin: auto;
+    font-size: 18px;
+    border-bottom-color: #5c1810;
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    text-decoration: underline;
+}
+.desserts p:hover{
+    text-decoration: wavy;
+}
+
+.flavor {
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: -40px;
+
+}
+
+.price {
+    text-align: right;
+    margin-right: 100px;
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 20px;
+
+}

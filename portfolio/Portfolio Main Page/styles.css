@@ -1,0 +1,341 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+   background-color:#578640
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#83b462;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: thin solid #40531B;
+}
+
+#navbar * {
+    display: inline;
+    color: black;
+    text-decoration: none;
+    font-family: "Impact";
+}
+
+#navbar li {
+    margin: 20px;
+    list-style: none;
+
+}
+
+#navbar li:hover {
+    border-top: thin solid black;
+    border-bottom: thin solid black
+}
+
+#profile-picture {
+    display: flex;
+    border-radius: 50%;
+    width: 30%;
+    box-shadow: 0 4px 6px 0 #40531B;
+    transition: all ease-in-out .2s;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    align-items: center;
+}
+
+
+#profile-picture:hover {
+    box-shadow: 0 8px 30px #40531B;
+    transition: all ease-in-out .2s;
+}
+
+#profile-heading,
+#profile-subheading,
+#profile-quote {
+    color: black;
+    text-align: center;
+}
+
+#profile-subheading {
+    font-family:'harrington';
+    
+
+}
+
+#profile-quote {
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#profile-heading {
+    font-family: 'Freestyle Script';
+    font-size: 32pt;
+    margin-top: -1px;
+    text-decoration:underline;
+    
+    
+
+}
+
+#projects,
+#rates {
+    text-align: center;
+    font-size: 20pt;
+    
+}
+
+.projects-grid,
+.rate-card-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.project-image-wrapper,
+.rate-card-wrapper {
+    justify-self: center;
+    padding: 4%;
+    position: relative;
+}
+
+@media(max-width: 650px) {
+    .projects-grid {
+        grid-template-columns: 100%;
+    }
+
+    .rate-card-grid {
+        grid-template-columns: 100%;
+    }
+
+}
+
+.project-tile,
+#rate-card {
+    border-radius: 5%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px 0 #40531B;
+    transition: all ease-in-out .2s;
+
+
+}
+
+.project-tile:hover {
+    filter: brightness(.75);
+    box-shadow: 0 4px 17px 0 black;
+    
+
+
+}
+
+.project-image-wrapper:hover>h4 {
+    visibility: visible;
+}
+
+.project-image-wrapper>h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;
+    text-decoration: underline;
+}
+
+.contacts {
+    list-style: none;
+    padding: 0;
+
+}
+
+.contacts * {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: cursive;
+    width: 50%;
+    overflow: auto;
+
+}
+
+.contacts,
+#profile-picture:hover {
+    text-shadow: 2px 2px 1px black;
+    transition: transform 0.3s ease-out;
+}
+
+
+@media (max-width: 650px) {
+    .contact {
+        grid-template-columns: 100%;
+    }
+}
+
+form input,
+textarea {
+    padding: 5px;
+    border-radius: 5px;
+    width: 240px;
+
+}
+
+
+form input[type=submit] {
+    width: 240px;
+    margin: 5px;
+}
+
+.submit-button:hover {
+    box-shadow: 0 4px 16px 0 #40531B;
+    transition: all ease-in-out .2s;
+
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+#rate-card {
+    text-align: center;
+    width: 170px;
+    background-color: rgb(66, 66, 66);
+    color: lightgrey;
+    border-radius: 5px;
+    box-shadow: 0 4px 17px 0 #40531B;
+    font-size: 10pt;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+#rate-card:hover {
+    filter: brightness(.95);
+    box-shadow: 0 4px 17px 0 black;
+    
+    color: whitesmoke;
+   
+
+
+}
+
+
+
+.rate-card-wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;
+    text-align: center;
+
+}
+
+#rate-card h5 {
+    font-size: 12pt;
+    color: black;
+    ;
+    margin: -4px
+}
+
+#rate-card h3 {
+    color: white;
+    font-size: 14pt;
+}
+
+#rate-card li:hover {
+    font-size: 12pt;
+    text-decoration: underline;
+
+}
+
+#rate-card a:hover {
+    font-size: 14pt;
+    margin: -40px;
+}
+
+#rate-card h5:hover {
+    font-size: 14pt;
+    margin: -4px;
+    text-decoration: underline;
+
+}
+
+#rate-card a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: fantasy;
+
+}
+
+#rate-card li {
+    text-align: left;
+
+}
+
+#heading {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+@media(max-width: 480px) {
+    .rate-card-grid {
+        grid-template-columns: 50%;
+    }
+}
+
+#feedback-heading {
+
+    text-align: center;
+
+
+}
+
+#feedback-form {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+input:hover {
+    box-shadow: 0 4px 17px 0 black;
+}
+#notice{
+    color:black;
+    font-size:10pt;
+    text-align:center;
+
+}

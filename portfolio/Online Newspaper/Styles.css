@@ -1,0 +1,59 @@
+/* Reset default styles */
+body {
+    background-color: #bec0e0
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    background-color: #0c1155;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+
+    width: 100%;
+
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-content {
+    margin-top: 90px;
+}
+
+/* Article styles */
+article {
+    background-color: #cbcdf0;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0c1155;
+    color: #fff;
+}
